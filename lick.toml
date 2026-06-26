@@ -1,0 +1,12 @@
+[package]
+name = "zellij"
+version = "0.44.3"
+description = "a terminal workspace with batteries included"
+homepage = "https://zellij.dev/"
+license = "MIT"
+url = "https://github.com/vicvenscob/zellij/archive/refs/heads/main.tar.gz"
+depends = []
+post_install = "cargo build --release && cp target/release/zellij /usr/local/bin/zellij"
+output_files = ["/usr/local/bin/zellij"]
+
+[package.files]
